@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=StyleSheet HREF="{% static 'style/index.css' %}" TYPE="text/css" MEDIA=screen>
+  <title>Parking UD</title>
+</head>
+<body>
+  <div class="Container"> 
+    <div class="Container-Header">
+      <img src="{% static 'assets/universidad-distrital.jpg' %}"/>
+      <h1 class="Title">
+        PARKING UD 
+        FACULTAD TECNOLOGICA
+      </h1>
+    </div>
+    <div class="Container-Main">
+      <p class="Text">
+        Bienvenido a la Web del parqueadero de la Facultad Tecnologica de la Universidad Distrital Francisco Jose de Caldas
+      </p>
+    </div>
+    <div class="Container-Footer">
+      <a class="Boton" href="{% url 'datos' %}">
+        DATOS
+        ACTUALES
+      </a>
+      <a class="Boton" href="{% url 'datos2' %}">
+        ULTIMOS
+        DATOS
+      </a>
+    </div>
+  </div>
+</body>
+</html>

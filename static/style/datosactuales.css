@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding-top: 12px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font: 1em ;
+}
+label{
+    float: left;
+    font: 1em ;
+}
+.Container-Header{
+    display: flex;
+    background: #CD7B00;
+    opacity: 70%;
+    align-items: auto; 
+    justify-content: space-between;
+    height: 5vh;
+    padding-top: 1%;
+    border-bottom-left-radius: 10pt;
+    border-bottom-right-radius: 10pt;
+}
+.Container-Main{
+    height: 95vh;
+}
+.Container-MainTop{
+    height: 35%;
+}
+.Container-MainBottom{
+    height: 60%;
+    margin: 6%;
+}
+.Container-Data{
+    margin-top: 10px;
+    height: 100%;
+    border-style: solid;
+    border-radius: 10pt;
+    border-width: 0.5px;
+    border-color: gray;
+    margin-bottom: 0px;
+    padding-bottom: 5%;
+}
+.Container-Photo{
+    height: 70%;
+    margin: 5%;
+    border-radius: 15pt;
+    box-shadow: 0pt 4pt 4pt 0pt  rgba(0, 0, 0, 0.25);
+}
+.Container-State{
+    display: flex;
+    height: 30%;
+    margin: 5%;
+    border-radius: 5pt;
+    box-shadow: 0pt 2pt 2pt 0pt  rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    align-items: center;
+}
+.Photo{
+    margin: auto;
+    border-radius: 15pt;
+}
+.Data{
+    padding: 2%;
+    height: 100%;
+}
+.Circle{
+    margin: 3%;
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+.State{
+    display: flex;
+    text-align: center;
+}
+@media screen and (min-width:600px) and (max-width:1023px){
+    .Container-Main{
+        display: flex;
+        height: 95vh;
+    }
+    .Container-MainTop{
+        width: 30%;
+        height: 100%;
+        margin-top: 2%;
+    }
+    .Container-MainBottom{
+        width: 70%;
+        height: 100%;
+        font-size: 1.5em;
+        margin: 2%
+    }
+    label{
+        font-size: 1em;
+    }
+    .Container-Data{
+        padding-bottom: 10ch;
+    }
+    input{
+        font-size: 1em;
+    }
+    .Container-State{
+        margin: 5%;
+        font-size: 1.5em;
+    }
+    h5{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    .Container-Main{
+        display: flex;
+        height: 95vh;
+    }
+    .Container-MainTop{
+        width: 30%;
+        height: 100%;
+    }
+    .Container-MainBottom{
+        width: 70%;
+        height: 100%;
+    }
+    label{
+        font-size: 1.2em;
+    }
+    .Container-Data{
+        padding-bottom: 3ch;
+    }
+    input{
+        font-size: 1.2em;
+    }
+    .Container-MainBottom{
+        font-size: 1.5em;
+        margin: 2%;
+    }
+    .Container-MainTop{
+        margin-top: 2%;
+    }
+    .Container-State{
+        margin: 5%;
+        font-size: 2em;
+    }
+    .State{
+        font-size: 0.8em;
+    }
+    h5{
+        font-size: 1.5em;
+    }
+}

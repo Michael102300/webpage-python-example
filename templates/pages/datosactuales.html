@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet HREF="{% static 'style/datosactuales.css' %}" TYPE="text/css" MEDIA=screen>
+    <title>Datos actuales</title>
+</head>
+<body>
+    <div class="Container"> 
+        <div class="Container-Header">
+            <div class="Icon">
+                <a href="{% url 'inicio' %}">
+                    <img src="{% static 'assets/Polygon 1.png' %}" width="80%" height="80%" >
+                </a>
+            </div>
+            <h5>
+                PARKING UD 
+                FACULTAD TECNOLOGICA
+            </h5>
+        </div>
+        <div class="Container-Main">
+            <div class="Container-MainTop">
+                <div class="Container-Photo">
+                    <img  class="Photo" src="https://www.pruebaderuta.com/wp-content/uploads/2016/03/placa-amarilla.jpg" width="100%" height="100%">
+                </div>
+                <div class="Container-State">
+                    Estado
+                    <div class="Circle">
+                    </div>
+                    <div class="State">
+                        Adentro/Afuera
+                    </div>
+                </div>
+            </div>
+            <div class="Container-MainBottom">
+                <h3> Datos actuales</h3>
+                <div class="Container-Data">
+                    <div class="Data">
+                        <form>
+                            <label>
+                                Hora de Entrada
+                            </label><br>
+                            <input type="text" id="fhour" name="fhour" value="Hola" disabled><br>
+                            <label>
+                                Nombre
+                            </label><br>
+                            <input type="text" id="fname" name="fname" disabled><br>
+                            <label>
+                                Apellido
+                            </label><br>
+                            <input type="text" id="flastname" name="flastname" disabled><br>
+                            <label>
+                                Numero de celular
+                            </label><br>
+                            <input type="text" id="fnumber" name="fnumber" disabled><br>
+                            <label>
+                                Placa de vehiculo
+                            </label><br>
+                            <input type="text" id="fplaca" name="fplaca" disabled><br>
+                            <label>
+                                Vehiculo registrado
+                            </label><br>
+                            <input type="text" id="fvehiculo" name="fvehiculo" disabled><br>
+                            <label>
+                                Relacion con la universidad
+                            </label>
+                            <input type="text" id="frelacion" name="frelacion" disabled><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

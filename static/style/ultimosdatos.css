@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    text-align: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding-top: 12px;
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18pt ;
+    margin-bottom: 20px;
+}
+label{
+    float: left;
+    font: 1em ;
+}
+.Container-Header{
+    display: flex;
+    background: #CD7B00;
+    opacity: 70%;
+    align-items: auto; 
+    justify-content: space-between;
+    height: 5vh;
+    padding-top: 1%;
+    border-bottom-left-radius: 10pt;
+    border-bottom-right-radius: 10pt;
+}
+.Container-Main{
+    height: 95vh;
+    margin: 2%;
+}
+.Container-Data{
+    margin-top: 10px;
+    height: 100%;
+    border-style: solid;
+    border-radius: 10pt;
+    border-width: 0.5px;
+    border-color: gray;
+    margin-bottom: 0px;
+}
+.Data{
+    margin-top: 20px;
+    padding: 2%;
+    height: 100%;
+    margin-bottom: 0px;
+}
+@media screen and (min-width:600px) and (max-width:1023px){
+    .Container-Main{
+        height: 95vh;
+    }
+    h3{
+        font-size: 20pt;
+    }
+    .Container-Data{
+        padding-bottom: 22%;
+    }
+    input{
+        font-size: 1em;
+    }
+    h5{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:1024px){
+    .Container-Main{
+        height: 95vh;
+    }
+    h3{
+        font-size: 26pt;
+    }
+    .Container-Data{
+        padding-bottom: 3ch;
+    }
+    input{
+        font-size: 1.2em;
+    }
+    h5{
+        font-size: 1.5em;
+    }
+}

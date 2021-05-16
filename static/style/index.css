@@ -1,0 +1,121 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    text-align: center;
+}
+img{
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    filter: blur(1px);
+    z-index: -1;
+    opacity: 70%;
+}
+.Container-Header{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+.Container-Main{
+    background: white;
+    position: absolute;
+    z-index: 1; 
+    top: 43%; 
+    width: 80%;
+    right: 9%;
+    border-radius: 20pt;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0pt 4pt 4pt 0pt  rgba(0, 0, 0, 0.25);
+    padding: 0.5%;
+
+}
+.Container-Footer{
+    background: #DCA34D;
+    padding: 10%;
+    border-top-left-radius: 20pt;
+    border-top-right-radius: 20pt;
+    align-items: auto; 
+    justify-content: space-between;
+    height: 50vh;
+
+}
+.Boton{ 
+    background-color: white;
+    color:black;
+    margin-top: 20%;
+    padding: 8%;
+    border-radius: 30pt;
+    box-shadow: 0pt 4pt 4pt 0pt  rgba(0, 0, 0, 0.25);
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.Title{
+    font-size: 26pt;
+}
+.Text{
+    font-size: 14pt;
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .Title{
+        font-size: 36pt;
+    }
+    .Boton{
+        margin-top: 10%;
+        font-size: 26pt;
+        padding: 3.5%;
+        margin-bottom: 5%;
+    }
+    .Text{
+        font-size: 20pt;
+    }
+    .Container-Main{
+        left: 10%;
+        top: 40%;
+    }
+    .Container-Footer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+}
+@media screen and (min-width:1024px){
+    .Container-Header{
+        justify-content: center;
+        
+    }
+    .Container-Main{
+        left: 20%;
+        top: 35%;
+        width: 60%;
+    }
+    .Container-Footer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .Title{
+        font-size: 46pt;
+    }
+    .Boton{
+        margin-top: 10%;
+        padding: 5%;
+        font-size: 36pt;
+        margin-bottom: 5%;
+    }
+    .Text{
+        font-size: 30pt;
+        padding: 2%;
+    }
+    
+}

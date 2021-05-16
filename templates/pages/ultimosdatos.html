@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet HREF="{% static 'style/ultimosdatos.css' %}" TYPE="text/css" MEDIA=screen>
+    <title>ultimos datos</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="Container-Header">
+            <div class="Icon">
+                <a href="{% url 'inicio' %}">
+                    <img src="{% static 'assets/Polygon 1.png' %}" width="80%" height="80%" >
+                </a>
+            </div>
+            <h5>
+                PARKING UD 
+                FACULTAD TECNOLOGICA
+            </h5>
+        </div>
+        <div class="Container-Main">
+            <h3>Ultimos datos</h3>
+            <div class="Container-Data">
+                <div class="Data">
+                    <form>
+                        <input type="text" id="fhour" name="fhour" value="Hola" disabled><br>
+                        <input type="text" id="fname" name="fname" disabled><br>
+                        <input type="text" id="flastname" name="flastname" disabled><br>
+                        <input type="text" id="fnumber" name="fnumber" disabled><br>
+                        <input type="text" id="fplaca" name="fplaca" disabled><br>
+                        <input type="text" id="fvehiculo" name="fvehiculo" disabled><br>
+                        <input type="text" id="frelacion" name="frelacion" disabled><br>
+                        <input type="text" id="frelacion" name="frelacion" disabled><br>
+                        <input type="text" id="frelacion" name="frelacion" disabled><br>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
